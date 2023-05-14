@@ -1,0 +1,37 @@
+ [{
+    "id": 1,
+    "img": "https://iteck-html.themescamp.com/assets/img/team/1.jpeg",
+    "price": "12,000",
+    "name":"Team"
+  },
+  {
+    "id": 2,
+    "img": "https://iteck-html.themescamp.com/assets/img/team/2.jpeg",
+    "price": "8,000",
+    "name":"Team"
+  },
+  {
+    "id": 3,
+    "img": "https://iteck-html.themescamp.com/assets/img/team/1.jpeg",
+    "price": "1,000",
+    "name":"Team"
+  },
+  {
+    "id": 4,
+    "img": "https://iteck-html.themescamp.com/assets/img/team/1.jpeg",
+    "price": "1,000",
+    "name":"Team"
+  },
+  {
+    "id": 5,
+    "img": "https://iteck-html.themescamp.com/assets/img/team/1.jpeg",
+    "price": "1,000",
+    "name":"Team"
+  },
+  {
+    "id": 6,
+    "img": "https://iteck-html.themescamp.com/assets/img/team/1.jpeg",
+    "price": "1,000",
+    "name":"Team"
+  }
+]
