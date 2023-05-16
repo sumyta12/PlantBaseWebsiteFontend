@@ -10,7 +10,7 @@ const HeroSection = () => {
             <div className="line-title">
               <div className="yellow_text">
                 <p>& Magic Of The Plants</p>
-              </div>
+              </div> 
               <div className="small_text">
                 <p>
                   Trees help to mitigate the 'Greenhouse' effect by absorbing

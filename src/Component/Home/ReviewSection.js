@@ -19,22 +19,22 @@ const ReviewSection = () => {
   return (
     <div>
       <section id="BestSellers">
-        <div class="container">
-          <div class="BestSellerswrapper">
-            <div class="BestSellersTop mt-5 text-lg-center text-white">
+        <div className="container">
+          <div className="BestSellerswrapper">
+            <div className="BestSellersTop mt-5 text-lg-center text-white">
               <p>
-                Best <span class="yellow_text">Sellers</span>
+                Best <span className="yellow_text">Sellers</span>
               </p>
             </div>
-            <div class="BestSellersBottom">
-              <div class="row BestSellerscarts justify-content-lg-center">
+            <div className="BestSellersBottom">
+              <div className="row BestSellerscarts justify-content-lg-center">
                 {review.map((review, index) => (
-                  <div class="col-lg-3 col-6">
-                    <div key={index} class="feature-card">
-                      <div class="img">
+                  <div  key={index} className="col-lg-3 col-6">
+                    <div className="feature-card">
+                      <div className="img">
                         <img src={review.img} alt="img"></img>
                       </div>
-                      <div class="info ms-3">
+                      <div className="info ms-3">
                         <h2> {review.name} </h2>
                         <p>
                           {" "}

@@ -4,13 +4,13 @@ import plant from "./../Pictures/cover.png";
 const Footer = () => {
   return (
     <section id="Footer">
-      <div class="container">
-        <div class="footerWrapper">
-          <div class="footer_sites_one">
-            <div class="img">
+      <div className="container">
+        <div className="footerWrapper">
+          <div className="footer_sites_one">
+            <div className="img">
               <img src={plant} alt="img"></img>
             </div>
-            <div class="info">
+            <div className="info">
               <p>
                 {" "}
                 The world’s first and largest digital NFT marketplace for crypto
@@ -19,8 +19,8 @@ const Footer = () => {
               </p>
             </div>
           </div>
-          <div class="footer_sites_two">
-            <div class="footertwoinfo">
+          <div className="footer_sites_two">
+            <div className="footertwoinfo">
               <h2>Marketplace</h2>
               <ul>
                 <li>
@@ -35,8 +35,8 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div class="footer_sites_three">
-            <div class="footertwoinfo">
+          <div className="footer_sites_three">
+            <div className="footertwoinfo">
               <h2>My Account</h2>
               <ul>
                 <li>
@@ -51,8 +51,8 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div class="footer_sites_four">
-            <div class="footertwoinfo">
+          <div className="footer_sites_four">
+            <div className="footertwoinfo">
               <h2>Resources</h2>
               <ul>
                 <li>
@@ -68,7 +68,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div class="text-lg-center text-black mt-3">
+        <div className="text-lg-center text-black mt-3">
           <p>
             Copyright & Design By <span>&#169;sumyta oishi</span> - 2023
           </p>

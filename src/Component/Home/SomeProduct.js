@@ -18,6 +18,11 @@ const SomeProduct = () => {
     };
   }, []);
   if (data.length === 0) return null;
+  const handleAddToCart = (product) => {
+    const newCart = product;
+    console.log(newCart);
+    // setCart(newCart);
+  };
   return (
     <section id="NewArrival">
       <div className="container">
@@ -34,7 +39,12 @@ const SomeProduct = () => {
               <div className="col-lg-12 col-12">
                 <div className="row mt-4" id="card_row">
                   {data.slice(0, 4).map((product, index) => (
-                    <Product productItem={product} key={index} />
+                    <Product
+                      productItem={product}
+                      key={index}
+                      namess="nela"
+                      handleAddToCart={handleAddToCart}
+                    />
                   ))}
                 </div>
               </div>

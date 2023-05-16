@@ -40,35 +40,35 @@
     "index": 4,
     "isActive": false,
     "balance": "$3,476.55",
-    "img": "https://iteck-html.themescamp.com/assets/img/projects/nf5.png",
-    "name": "Creed Mirage",
-    "category": "Photography"
+    "img": "https://nurseryplantsbd.com/wp-content/uploads/2022/02/Fertilizers-2.webp",
+    "name": "Plant Pot",
+    "category": "pot"
   },
   {
     "_id": "645fc58c266c89a80d1a5c5f",
     "index": 5,
     "isActive": false,
     "balance": "$1,469.87",
-    "img": "https://iteck-html.themescamp.com/assets/img/projects/nf6.png",
-    "name": "Creed Mirage",
-    "category": "Virtual Worlds"
+    "img": "https://nurseryplantsbd.com/wp-content/uploads/2022/02/Fertilizers.webp",
+    "name": "Creed seeds",
+    "category": "fertilizer"
   },
   {
     "_id": "645fc58c6dd81ec61ceb2313",
     "index": 6,
     "isActive": false,
     "balance": "$3,997.96",
-    "img": "https://iteck-html.themescamp.com/assets/img/projects/nf7.png",
-    "name": "Creed Mirage",
-    "category": "Virtual Worlds"
+    "img": "https://nurseryplantsbd.com/wp-content/uploads/2022/02/Gardening-Tools.webp",
+    "name": "Garden Tools",
+    "category": "tools"
   },
   {
     "_id": "645fc58c57c00a5fdea4e906",
     "index": 7,
     "isActive": true,
     "balance": "$3,670.59",
-    "img": "https://iteck-html.themescamp.com/assets/img/projects/nf8.png",
-    "name": "Creed Mirage",
-    "category": "Art"
+    "img": "https://nurseryplantsbd.com/wp-content/uploads/2022/02/Soils.webp",
+    "name": "soil Mirage",
+    "category": "soil"
   }
 ]

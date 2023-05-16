@@ -48,19 +48,19 @@ nav .container .navbar-brand {
   width: 280px;
   padding: 30px 50px 30px 30px;
   -webkit-border-end: 1px solid rgba(255, 255, 255, 0.0666666667);
-          border-inline-end: 1px solid rgba(255, 255, 255, 0.0666666667);
+  border-inline-end: 1px solid rgba(255, 255, 255, 0.0666666667);
 }
 nav .container .navbar-brand img {
   width: 100%;
 }
 
-.nav-link{
+.nav-link {
   font-size: 25px !important;
   color: #000 !important;
   margin-left: 30px !important;
   border-bottom: 1px solid #000 !important;
 }
-.nav-link:hover{
+.nav-link:hover {
   cursor: pointer;
   border-top: 1px solid #000 !important;
 }
@@ -197,6 +197,9 @@ nav .container .navbar-brand img {
 }
 /*player card section end  */
 /* product css */
+#NewArrival {
+  padding-top: 120px;
+}
 #NewArrival .button_style button {
   cursor: pointer;
   background-color: #1d1c24;
@@ -316,7 +319,7 @@ i {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .feature-card .info h2 {
   font-family: "Inter", sans-serif;
@@ -427,7 +430,6 @@ i {
 
 /* footer css */
 
-
 @media (min-width: 320px) and (max-width: 575px) {
   nav .container .navbar-brand {
     width: 197px;
@@ -455,11 +457,23 @@ i {
   .small_text {
     width: 100% !important;
   }
-  #herosection .container .hero_section_wrapper .info .line-title .yellow_text p {
+  #herosection
+    .container
+    .hero_section_wrapper
+    .info
+    .line-title
+    .yellow_text
+    p {
     font-size: 91px;
     font-weight: 700;
   }
-  #herosection .container .hero_section_wrapper .info .line-title .small_text p {
+  #herosection
+    .container
+    .hero_section_wrapper
+    .info
+    .line-title
+    .small_text
+    p {
     margin-top: 15px;
     font-size: 14px;
   }
@@ -556,4 +570,92 @@ i {
   #Footer .footerWrapper {
     padding-bottom: 18px;
   }
+}
+/* nearestshop */
+#nearestshop {
+  position: relative;
+  padding-top: 155px;
+}
+.card-desgin-el {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* nearestshop */
+/* input desgin */
+.form-control {
+  max-width: 50% !important;
+  display: inline !important;
+}
+.fromdesign {
+  background-color: #1a191e !important;
+  border-radius: 15px !important;
+  border: 0;
+  padding: 15px 15px 15px 45px !important;
+  color: #fff;
+}
+.fromdesign .formintput {
+  background-color: #1a191e;
+  border: none;
+  color: #000;
+}
+button {
+  margin-left: 10px;
+  padding: 12px 30px;
+  font-weight: 500;
+  display: inline-flex;
+  text-align: center;
+  justify-content: center;
+  background-color: #ff849d;
+  border: none;
+  border-radius: 18px !important;
+}
+/* input design */
+/* blogsection */
+.blogsection{
+  position: relative;
+  padding-top: 155px !important;
+}
+.roundshap{
+  border: 1px solid #ff849d;
+  border-radius: 12px;
+  padding: 3px;
+  font-size: 12px;
+  margin-left: 20px;
+}
+/* blogsection */
+/* loginpagecss */
+.loginpagecss{
+  position: relative;
+  padding-top: 167px;
+
+}
+/* loginpagecss */
+.mainform{
+ 
+}
+.form{
+
+}
+.form-control {
+  max-width: 100% !important;
+  display: block !important;
+}
+/*  */
+.buttonaslinkdesgin {
+  margin-left: 10px !important;
+  padding: 12px 30px !important;
+  font-weight: 500 !important; 
+  display: inline-flex !important;
+  text-align: center;
+  justify-content: center;
+  background-color: #ff849d;
+  border: none;
+  border-radius: 18px !important;
+}
+.practicecss{
+  position: relative;
+  padding-top: 180px;
 }

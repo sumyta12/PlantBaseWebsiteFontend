@@ -1,9 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Product = (productItem) => {
-  const { name, img, _id, balance } = productItem.productItem;
-
+const Product = (props) => {
+  const { name, img, _id, balance } = props.productItem;
+  function handleproductToCart(product){
+   console.log(product)
+  }
   return (
     <div className="col-lg-3 mt-3">
       <div className="cards_el">
@@ -20,7 +22,7 @@ const Product = (productItem) => {
         <div className="img_cover position-relative">
           <img className="position-relative" alt="img" src={img}></img>
           <Link className=" hover-shadow text-danger" href="#">
-            <span>
+            <span onClick={() => handleproductToCart(props.productItem)}>
               <i className="fa-solid fa-basket-shopping"></i>
               Buy Now
             </span>
