@@ -6,7 +6,9 @@
     "name": "Roadside Nursery",
     "category": "tree",
     "img": "https://nurseryplantsbd.com/wp-content/uploads/2022/02/Bonsai-Plants.webp",
-    "loaction": "dhanmondi"
+    "loaction": "dhanmondi",
+    "description": "Free Servicing up to 20% every purchase 🚐 ",
+    "addition": "Roadside Nursery is a multivendor website where you can Buy or Sell Nursery Tools, Plants, or Trees, Online Bonsai plants, Spices, Herbal, Orchids, Fruit Tree, flower, Landscape, Pikes, Garden, Wholesale Nursery Near Me"
   },
   {
     "_id": "645fc58c478b30342c9b733b",
@@ -21,9 +23,12 @@
     "_id": "645fc58c19a5c0380c23f2e1",
     "index": 2,
     "img": "https://nurseryplantsbd.com/wp-content/uploads/2022/02/Cactus-Plants.webp",
-    "name": "ashuliya Club Nursery",
+    "name": "Ashuliya Club Nursery",
     "category": "tree",
-    "loaction": "ashuliya"
+    "loaction": "ashuliya",
+    "description": "Free Servicing up to 20% every purchase 🚐 ",
+    "addition": "Ashuliya Club Nursery  is a multivendor website where you can Buy or Sell Nursery Tools, Plants, or Trees, Online Bonsai plants, Spices, Herbal, Orchids, Fruit Tree, flower, Landscape, Pikes, Garden, Wholesale Nursery Near Me"
+  
   },
   {
     "_id": "645fc58cc90c76a419bad831",

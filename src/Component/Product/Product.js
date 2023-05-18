@@ -1,10 +1,28 @@
 import React, { useEffect, useState } from "react";
 import AllProduct from "../Home/Product";
 import UseEffectHook from "../../Hooks/UseEffectHook";
+import AddBucket from "./AddBucket";
 
 const Product = () => {
-  const [data, setData] = UseEffectHook(`/product.json`)
- 
+  const [data, setData] = UseEffectHook(`/product.json`);
+  const [allitem, setitem] = useState([]);
+  const [filterproduct , setfilterproduct] = useState([]);
+  function handlerProductoCart(product) {
+    const totalProductItem = [...allitem, product];
+    const newarr = [];
+    const total = totalProductItem.filter(function (item) {
+      const duplicate = newarr.includes(item._id)
+      if(!duplicate){
+        newarr.push(item._id)
+        return true;
+      }else{
+      return false;
+      }
+    })
+    setitem(totalProductItem)
+    setfilterproduct(total)
+  }
+
   if (data.length === 0) return null;
   return (
     <div>
@@ -21,10 +39,12 @@ const Product = () => {
                   <div className="col-top-wrapper text-lg-center text-center button_style"></div>
                 </div>
                 <div className="col-lg-12 col-12">
+                  <AddBucket allitem={filterproduct} />
                   <div className="row mt-4" id="card_row">
                     {data.slice(0, data.length).map((product, index) => (
                       <AllProduct
                         productItem={product}
+                        handlerProductoCart={handlerProductoCart}
                         key={index}></AllProduct>
                     ))}
                   </div>
@@ -39,4 +59,3 @@ const Product = () => {
 };
 
 export default Product;
-

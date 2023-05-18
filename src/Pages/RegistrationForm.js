@@ -165,7 +165,7 @@ const RegistrationForm = () => {
                         <p>Are you Student?</p>
                       </div>
                       <div className="col-6">
-                        <i class="fa-solid fa-school"></i>
+                         
                       </div>
                     </div>
                   </Link>

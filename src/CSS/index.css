@@ -199,6 +199,7 @@ nav .container .navbar-brand img {
 /* product css */
 #NewArrival {
   padding-top: 120px;
+  position: relative;
 }
 #NewArrival .button_style button {
   cursor: pointer;
@@ -608,17 +609,17 @@ button {
   display: inline-flex;
   text-align: center;
   justify-content: center;
-  background-color: #ff849d;
+  background-color: #90c7c1;
   border: none;
   border-radius: 18px !important;
 }
 /* input design */
 /* blogsection */
-.blogsection{
+.blogsection {
   position: relative;
   padding-top: 155px !important;
 }
-.roundshap{
+.roundshap {
   border: 1px solid #ff849d;
   border-radius: 12px;
   padding: 3px;
@@ -627,18 +628,14 @@ button {
 }
 /* blogsection */
 /* loginpagecss */
-.loginpagecss,.profiledashboardcss{
+.loginpagecss,
+.profiledashboardcss {
   position: relative;
   padding-top: 167px;
 }
 
 /* loginpagecss */
-.mainform{
- 
-}
-.form{
 
-}
 .form-control {
   max-width: 100% !important;
   display: block !important;
@@ -647,15 +644,85 @@ button {
 .buttonaslinkdesgin {
   margin-left: 10px !important;
   padding: 12px 30px !important;
-  font-weight: 500 !important; 
+  font-weight: 500 !important;
   display: inline-flex !important;
   text-align: center;
   justify-content: center;
-  background-color: #ff849d;
+  background-color: #90c7c1;
   border: none;
   border-radius: 18px !important;
 }
-.practicecss{
+.practicecss,
+.shopgalarrayCss {
   position: relative;
   padding-top: 180px;
+}
+/* cartComponentcss */
+.cartComponentcss {
+  padding: 16px 10px 20px 16px;
+  background-color: #90c7c1;
+  border-radius: 50%;
+  border: none;
+  position: fixed;
+  z-index: 9999;
+  bottom: 10px;
+  right: 10px;
+}
+
+.spancss {
+  display: flex;
+  justify-content: center;
+  flex-flow: row-reverse;
+}
+.spancss span {
+  margin-top: -16px;
+  padding-left: 3px;
+  width: 20px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #ff849d;
+}
+.cartComponentcss i {
+  font-size: 30px;
+  color: whitesmoke;
+}
+.cardDesplayCss {
+  position: fixed;
+  bottom: 88px;
+  right: 20px;
+  z-index: 99999;
+}
+.ptagcss {
+  font-size: 12px;
+  line-height: 14px;
+}
+.imgclippathgenerator {
+  -webkit-clip-path: polygon(
+    50% 0%,
+    83% 12%,
+    100% 43%,
+    94% 78%,
+    68% 100%,
+    32% 100%,
+    6% 78%,
+    0% 43%,
+    17% 12%
+  );
+  clip-path: polygon(
+    50% 0%,
+    83% 12%,
+    100% 43%,
+    94% 78%,
+    68% 100%,
+    32% 100%,
+    6% 78%,
+    0% 43%,
+    17% 12%
+  );
+  height: 70%;
+}
+.plantcssstext {
+  font-size: 20px;
+  line-height: 30px;
+  text-align: justify;
 }
