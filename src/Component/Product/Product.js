@@ -1,22 +1,10 @@
 import React, { useEffect, useState } from "react";
 import AllProduct from "../Home/Product";
+import UseEffectHook from "../../Hooks/UseEffectHook";
 
 const Product = () => {
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    let set = false;
-    if (!set) {
-      fetch(`/product.json`)
-        .then((res) => res.json())
-        .then((data) => {
-          setData(data);
-        });
-    }
-    return () => {
-      set = true;
-    };
-  }, []);
+  const [data, setData] = UseEffectHook(`/product.json`)
+ 
   if (data.length === 0) return null;
   return (
     <div>
@@ -51,6 +39,4 @@ const Product = () => {
 };
 
 export default Product;
-// {data.slice(0, 4).map((product, index) => (
-//     <Product productItem={product} key={index} />
-//   ))}
+

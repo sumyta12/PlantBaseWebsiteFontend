@@ -19,7 +19,6 @@ const NavElemetSection = () => {
             </Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
-             
               id={`offcanvasNavbar-expand-${expand}`}
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
               placement="end">
@@ -66,7 +65,10 @@ const NavElemetSection = () => {
 
                 {usersdata.email && (
                   <>
-                    <p className="mt-3">{usersdata.email}</p>
+                    <Nav.Link className="me-4" as={Link} to="dashboard" type="button">
+                      Profile
+                    </Nav.Link>
+
                     <button onClick={signOutUser}>Log Out</button>
                   </>
                 )}

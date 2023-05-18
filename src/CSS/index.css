@@ -627,11 +627,11 @@ button {
 }
 /* blogsection */
 /* loginpagecss */
-.loginpagecss{
+.loginpagecss,.profiledashboardcss{
   position: relative;
   padding-top: 167px;
-
 }
+
 /* loginpagecss */
 .mainform{
  

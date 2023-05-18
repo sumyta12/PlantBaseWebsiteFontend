@@ -3,12 +3,12 @@ import { Col, Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { Link } from "react-router-dom";
-import PracticeUsefirebases from "../../Utiles/PracticeUsefirebases";
 import UseAuth from "../../Context/UseAuth";
-
+import Alert from "react-bootstrap/Alert";
+import Nav from "react-bootstrap/Nav";
 const LoginPage = () => {
-  const [clicked, setclicked] = useState(false);
-  const { signInEmailandPass } = UseAuth();
+  const [show, setShow] = useState(true);
+  const { signInEmailandPass, error } = UseAuth();
   const [details, setdetails] = useState({});
   function handlerdetails(e) {
     const name = e.target.name;
@@ -21,13 +21,7 @@ const LoginPage = () => {
     signInEmailandPass(details);
     e.preventDefault();
   }
-  function handlerLogin(e) {
-    if (e.target.checked === true) {
-      setclicked(true);
-    } else {
-      setclicked(false);
-    }
-  }
+
   return (
     <div className="loginpagecss">
       <Container className="mainform">
@@ -36,6 +30,15 @@ const LoginPage = () => {
             <Col lg={6} md={6} sm={12}>
               <Form className="login-form" onSubmit={handlersubmit}>
                 <h2 className="login-text"> LOGIN</h2>
+                {error && (
+                  <Alert
+                    variant="danger"
+                    onClose={() => setShow(false)}
+                    dismissible>
+                    <Alert.Heading>Oh snap! You got an error!</Alert.Heading>
+                    <p>{error}</p>
+                  </Alert>
+                )}
                 <Form.Group controlId="formBasicEmail">
                   <Form.Label>Email address</Form.Label>
                   <Form.Control
@@ -63,24 +66,14 @@ const LoginPage = () => {
                     type="submit">
                     Log In
                   </Button>
-
                   <br />
                 </Form.Group>
               </Form>
               <div>
-                <Form.Group className="mt-3">
-                  <Form.Check
-                    onClick={handlerLogin}
-                    label="Are you Not Registered?"
-                  />
-                  {clicked ? (
-                    <Link to="/register" type="button">
-                      Register
-                    </Link>
-                  ) : (
-                    ""
-                  )}
-                </Form.Group>
+                <Link
+                  to="/register">
+                 If you are not Register?
+                </Link>
               </div>
             </Col>
           </Row>

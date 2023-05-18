@@ -8,10 +8,11 @@ const Blog = () => {
   useEffect(() => {
     let set = false;
     if (!set) {
-      fetch(`/blogs.json`)
+      // blogs.json
+      fetch(`http://localhost:5000/plantblog`)
         .then((res) => res.json())
         .then((data) => {
-          setData(data);
+          setData(data.reverse());
         });
     }
     return () => {

@@ -13,6 +13,11 @@ import PrivateRoute from "./Component/PrivateRoute/PrivateRoute";
 import ShopGallery from "./Component/Shop/ShopGallery";
 import Practice from "./Practice/Practice";
 import PracticeUpdate from "./Practice/PracticeUpdate";
+import ProfileDashboard from "./Component/Profile/ProfileDashboard";
+import DashBoard from "./Component/Profile/DashBoard";
+import AddCard from "./Component/Profile/AddCard";
+import AddBlog from "./Component/Profile/AddBlog";
+import Student from "./Pages/Student";
 
 const App = () => {
   return (
@@ -39,10 +44,15 @@ const router = createBrowserRouter([
       },
       {
         path: "shop",
-        element:<Shop/>
-      },{
+        element: <Shop />,
+      },
+      {
+        path: "/student",
+        element: <Student />,
+      },
+      {
         path: "shop/:shopId",
-        element:<ShopGallery/>
+        element: <ShopGallery />,
       },
       {
         path: "blog",
@@ -65,14 +75,33 @@ const router = createBrowserRouter([
       {
         path: "login",
         element: <LoginPage />,
-      },{
-        path:"practice",
-        element : <Practice />
       },
       {
-        path:"practice/update/:id",
-        element : <PracticeUpdate />
-      }
+        path: "practice",
+        element: <Practice />,
+      },
+      {
+        path: "practice/update/:id",
+        element: <PracticeUpdate />,
+      },
+      {
+        path: "dashboard",
+        element: <ProfileDashboard />,
+        children: [
+          {
+            path: "/dashboard",
+            element: <DashBoard />,
+          },
+          {
+            path: "/dashboard/addcard",
+            element: <AddCard />,
+          },
+          {
+            path: "/dashboard/addblog",
+            element: <AddBlog/>,
+          },
+        ],
+      },
     ],
   },
 ]);
