@@ -38,7 +38,7 @@ const ReviewSection = () => {
                         <h2> {review.name} </h2>
                         <p>
                           {" "}
-                          Rise: <span> {review.price} </span>
+                          <span> {review.price} </span>
                         </p>
                       </div>
                     </div>

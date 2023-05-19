@@ -11,7 +11,7 @@ const ProfileDashboard = () => {
       <div className="container">
         <div className="row">
           <div className="col-lg-4 col-sm-2">
-            <Card border="danger" style={{ width: "80%" }}>
+            <Card border="danger" style={{ width: "80%", height: "300px",paddingTop:"30px" }}>
               <Card.Body>
                 <Nav.Link as={Link} to="/dashboard">
                   <Card.Title>Dashboard</Card.Title>

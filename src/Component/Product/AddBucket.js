@@ -3,14 +3,14 @@ import Card from "react-bootstrap/Card";
 const AddBucket = (props) => {
   const [click, setclick] = useState(false);
   const [filterbucket, setfilterbucket] = useState([]);
-  // const [allitems,setallitems] = useState([]);
+  const [allitemsf, setallitems] = useState([]);
   function hanlderRemove(itemId, product) {
-    const f = product.filter(item => item._id !== itemId);
-    
+    const newvalue = product.filter((item) => item._id !== itemId);
   }
   return (
     <div>
       <div className="cartComponentcss">
+        {console.log(allitemsf)}
         <div
           onClick={() => setclick(click === true ? false : true)}
           className="spancss">
@@ -37,7 +37,10 @@ const AddBucket = (props) => {
                         <h6>{item.name}</h6>
                       </div>
                       <div
-                        onClick={() => hanlderRemove(item._id, props?.allitem)}
+                        onClick={() => {
+                          hanlderRemove(item._id, props?.allitem);
+                          
+                        }}
                         className="col-lg-3 mt-3">
                         -
                       </div>

@@ -726,3 +726,11 @@ button {
   line-height: 30px;
   text-align: justify;
 }
+.boxinfocss{
+  height: 100px;
+  border-radius:15px;
+  color: whitesmoke;
+}
+.boxinfocss span{
+  font-size: 50px;
+}

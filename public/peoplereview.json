@@ -2,36 +2,36 @@
     "id": 1,
     "img": "https://iteck-html.themescamp.com/assets/img/team/1.jpeg",
     "price": "12,000",
-    "name":"Team"
+    "name":"Afjal Ali"
   },
   {
     "id": 2,
     "img": "https://iteck-html.themescamp.com/assets/img/team/2.jpeg",
     "price": "8,000",
-    "name":"Team"
+    "name":"Sakib Ali"
   },
   {
     "id": 3,
     "img": "https://iteck-html.themescamp.com/assets/img/team/1.jpeg",
     "price": "1,000",
-    "name":"Team"
+    "name":"Omo"
   },
   {
     "id": 4,
     "img": "https://iteck-html.themescamp.com/assets/img/team/1.jpeg",
     "price": "1,000",
-    "name":"Team"
+    "name":"Sarjuka Admed"
   },
   {
     "id": 5,
     "img": "https://iteck-html.themescamp.com/assets/img/team/1.jpeg",
     "price": "1,000",
-    "name":"Team"
+    "name":"Marjuka Admed"
   },
   {
     "id": 6,
     "img": "https://iteck-html.themescamp.com/assets/img/team/1.jpeg",
     "price": "1,000",
-    "name":"Team"
+    "name":"Sad nab mursed"
   }
 ]
