@@ -2,6 +2,12 @@ import React, { useState } from "react";
 import Card from "react-bootstrap/Card";
 const AddBucket = (props) => {
   const [click, setclick] = useState(false);
+  const [filterbucket, setfilterbucket] = useState([]);
+  // const [allitems,setallitems] = useState([]);
+  function hanlderRemove(itemId, product) {
+    const f = product.filter(item => item._id !== itemId);
+    
+  }
   return (
     <div>
       <div className="cartComponentcss">
@@ -30,7 +36,11 @@ const AddBucket = (props) => {
                       <div className="col-lg-5 mt-3">
                         <h6>{item.name}</h6>
                       </div>
-                      <div className="col-lg-3 mt-3">-</div>
+                      <div
+                        onClick={() => hanlderRemove(item._id, props?.allitem)}
+                        className="col-lg-3 mt-3">
+                        -
+                      </div>
                     </div>
                   </div>
                 ))

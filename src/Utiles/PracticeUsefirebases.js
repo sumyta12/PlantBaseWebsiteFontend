@@ -40,7 +40,7 @@ const PracticeUsefirebases = () => {
     const { email, password } = details;
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
-        const user = userCredential.user;
+        // const user = userCredential.user;
 
         // console.log(user);
       })

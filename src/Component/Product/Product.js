@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import AllProduct from "../Home/Product";
 import UseEffectHook from "../../Hooks/UseEffectHook";
 import AddBucket from "./AddBucket";
 
 const Product = () => {
-  const [data, setData] = UseEffectHook(`/product.json`);
+  const [data] = UseEffectHook(`/product.json`);
   const [allitem, setitem] = useState([]);
   const [filterproduct , setfilterproduct] = useState([]);
   function handlerProductoCart(product) {

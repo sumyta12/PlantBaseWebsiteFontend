@@ -5,11 +5,12 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import UseAuth from "../Context/UseAuth";
 import { Link } from "react-router-dom";
-import Nav from "react-bootstrap/Nav";
+
 const RegistrationForm = () => {
-  const [show, setShow] = useState(true);
+  // show,
+  const [ setShow] = useState(true);
   const [clicked, setclicked] = useState(false);
-  const { usersdata, handlegooglesignin, error, createUserEmailandPass } =
+  const { usersdata,  error, createUserEmailandPass } =
     UseAuth();
   const [details, setdetails] = useState({});
   function handlerdetails(e) {

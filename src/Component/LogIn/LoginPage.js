@@ -5,8 +5,8 @@ import Form from "react-bootstrap/Form";
 import { Link } from "react-router-dom";
 import UseAuth from "../../Context/UseAuth";
 import Alert from "react-bootstrap/Alert";
-import Nav from "react-bootstrap/Nav";
 const LoginPage = () => {
+  // show
   const [show, setShow] = useState(true);
   const { signInEmailandPass, error } = UseAuth();
   const [details, setdetails] = useState({});

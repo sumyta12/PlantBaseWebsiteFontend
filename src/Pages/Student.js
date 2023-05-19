@@ -1,13 +1,11 @@
 import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 import UseAuth from "../Context/UseAuth";
-import { Link } from "react-router-dom";
 import { Col, Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 
 const Student = () => {
-  const { usersdata, handlegooglesignin, error, createUserEmailandPass } =
-    UseAuth();
+  const { createUserEmailandPass } = UseAuth();
   const [details, setdetails] = useState({});
   function handlerdetails(e) {
     const name = e.target.name;
